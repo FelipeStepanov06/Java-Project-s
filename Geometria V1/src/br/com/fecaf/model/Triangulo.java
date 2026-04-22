@@ -23,6 +23,18 @@ public class Triangulo {
 
 
     }
+    public boolean validarTrianguloRetangulo() {
+        if ((lado1 * lado1) + (lado2 * lado2) == (base * base)) {
+            System.out.println("É um Triângulo Retângulo");
+
+            return true;
+        } else {
+            System.out.println("Não é um Triângulo Retângulo");
+            return false;
+        }
+    }
+
+
 
 //validação do triangulo
     public boolean validarTriangulo(){
@@ -30,8 +42,6 @@ public class Triangulo {
             System.out.println("Triangulo Valido");
 
             return true;
-
-
         }
         System.out.println("Triangulo Invalido");
         return false;
